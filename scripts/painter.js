@@ -1,4 +1,4 @@
-var painter = {
+export default {
 	clear: function (context, options) {
 		context.clearRect(0, 0, options.boardSize.width, options.boardSize.height);
 	},
@@ -20,9 +20,7 @@ var painter = {
 		context.beginPath();
 		context.moveTo(0, 0);
 		context.lineTo(15000, 10000);
-		// context.lineTo(20000, 0);
 		context.lineTo(30000, 0);
-		// context.lineTo(40000, 0);
 		context.lineTo(45000, 10000);
 		context.lineTo(60000, 0);
 		context.stroke();
